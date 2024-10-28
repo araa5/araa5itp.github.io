@@ -1,0 +1,264 @@
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.adminlogin-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.adminlogin-btn:hover {
+    background-color: #218838;
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;
+    right: 180px;
+    top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #218838;
+}
+
+.signup-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;
+    right: 310px;
+    top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #218838; 
+}
+
+#welcome {
+    background-color: #e0f7fa;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#welcome h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#welcome p {
+    font-size: 18px;
+    color: #555;
+}
+
+#image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+	border-radius: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#forum {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+}
+
+#forum h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#forum p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#forum a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#forum a:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header .logo .adminlogin-btn .login-btn .signup-btn {
+        position: static;
+        margin: 10px auto;
+        display: block;
+    }
+	
+	.adminlogin-btn .login-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+	
+	.login-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+	
+	.signup-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #welcome h2 {
+        font-size: 24px;
+    }
+
+    #welcome p {
+        font-size: 16px;
+    }
+}
